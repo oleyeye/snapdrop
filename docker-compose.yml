@@ -1,6 +1,7 @@
 version: "3"
 services:
   node:
+    container_name: node
     restart: always
     image: "node:lts-alpine"
     user: "node"
@@ -9,6 +10,7 @@ services:
       - ./server/:/home/node/app
     command: ash -c "npm i && node index.js"
   nginx:
+    container_name: nginx
     restart: always
     build:
       context: ./docker/
