@@ -234,7 +234,7 @@ class Peer {
         const displayName = uniqueNamesGenerator({
             length: 2,
             separator: ' ',
-            dictionaries: [colors, animals],
+            dictionaries: [animals],
             style: 'capital',
             seed: this.id.hashCode()
         })
