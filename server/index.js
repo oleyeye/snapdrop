@@ -232,7 +232,7 @@ class Peer {
             deviceName = 'Unknown Device';
 
         const displayName = uniqueNamesGenerator({
-            length: 2,
+            length: 1,
             separator: ' ',
             dictionaries: [animals],
             style: 'capital',
